@@ -1,0 +1,41 @@
+name: 💡 Quality-of-life / feature request
+description: Suggest a quality-of-life, operability, or usability improvement (non-content).
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Threads of Time welcomes **quality-of-life, operability, and usability** ideas.
+
+        Please note: the **gameplay, content, and lore direction is curated by the maintainers** and is not crowdsourced — creative/content proposals may be closed. This form is for QoL, ops, docs, performance, and non-content features.
+  - type: textarea
+    id: friction
+    attributes:
+      label: What's the friction?
+      description: What's awkward, slow, confusing, or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: What would make it better?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Install / first-boot
+        - Day-2 ops (backup, upgrade, logs, monitoring)
+        - Bot / harness behavior (non-content)
+        - Documentation
+        - Performance
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds you've tried
