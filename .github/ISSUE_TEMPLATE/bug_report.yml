@@ -1,0 +1,53 @@
+name: 🐛 Bug report
+description: Something in the server, bots, or install is broken or behaving wrong.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Threads of Time! For setup/how-to questions, please use
+        [Discussions → Q&A](https://github.com/threadsoftime/threads-of-time/discussions/categories/q-a) instead.
+  - type: input
+    id: version
+    attributes:
+      label: ToT version
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Deploy mode
+      options:
+        - Quadlet (Podman)
+        - Compose (Docker / Podman)
+        - Source build
+        - Other / not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: e.g. `tot logs worldserver`, `tot logs firstboot`. Redact any secrets/tokens.
+      render: shell
+  - type: input
+    id: env
+    attributes:
+      label: Host environment
+      placeholder: e.g. Fedora 41, podman 5.2, MySQL 8.4; LLM = Ollama qwen2.5:14b
