@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & operator support
+    url: https://github.com/threadsoftime/threads-of-time/discussions/categories/q-a
+    about: Install, BYOLLM, and how-to questions — please ask in Discussions Q&A.
+  - name: 📣 Announcements & releases
+    url: https://github.com/threadsoftime/threads-of-time/discussions/categories/announcements
+    about: Release notes and roadmap updates from the maintainers.
+  - name: 📖 Operator & player docs
+    url: https://github.com/threadsoftime/threads-of-time/tree/main/docs
+    about: Install, troubleshooting, and BYOLLM guides.
